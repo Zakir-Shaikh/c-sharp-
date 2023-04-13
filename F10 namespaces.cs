@@ -43,3 +43,18 @@ if you want to create a complex custmos types ,then we can make use of class
 a class consist of data and behaviour class data is represent by its filed and behaviour is represented by its method 
 */
 
+using System;
+class customer
+{
+  string firstname;
+  string lastname;
+  public customer(string firstname,string lastname)
+  {
+    this.firstname = firstname ;
+    this.lastname = lastname ;
+  }
+  public void printfullname()
+  {
+    console.writeline("full name = {0}",firstname +  " " + lastname);
+  }
+}
