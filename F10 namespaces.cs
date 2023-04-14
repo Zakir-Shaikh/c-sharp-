@@ -58,3 +58,12 @@ class customer
     console.writeline("full name = {0}",firstname +  " " + lastname);
   }
 }
+
+class program
+{
+  public static void main()
+  {
+    customer c1 = new customer();
+    c1.printfullname();
+  }
+}
