@@ -67,3 +67,26 @@ class program
     c1.printfullname();
   }
 }
+
+///static constractor
+/*
+you declare a static constructor by using the key word static infront of constructor name
+*/
+class circle
+{
+  static float _pi;
+  int _radius ;
+
+  static circle()
+  {
+    circle._pi = 3.14;
+  }
+  public circle (int _radius)
+  {
+    this._radius = _radius ;
+  }
+  public float calculatearea()
+  {
+    return circle._pi*this._radius*this._radius;
+  }
+}
